@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="label" destination="t3W-MJ-fDS" id="4y4-fi-z7S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3W-MJ-fDS">
+                    <rect key="frame" x="42" y="112" width="248" height="92"/>
+                    <color key="backgroundColor" red="1" green="0.65351217802214268" blue="0.73084921433782712" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="92" id="LgK-aV-cJD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sib-qq-vlD">
+                    <rect key="frame" x="29" y="233" width="95" height="58"/>
+                    <color key="backgroundColor" red="0.46160045175853859" green="0.80962561004764355" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="2nm-kk-GyD"/>
+                        <constraint firstAttribute="height" constant="58" id="z1i-e8-D5o"/>
+                    </constraints>
+                    <state key="normal" title="Push"/>
+                    <connections>
+                        <action selector="push:" destination="-1" eventType="touchUpInside" id="94h-PP-gfu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My3-n8-qEZ">
+                    <rect key="frame" x="165" y="239" width="125" height="52"/>
+                    <color key="backgroundColor" red="1" green="0.7608132181763565" blue="0.80586714397346593" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="kHZ-ld-k85"/>
+                        <constraint firstAttribute="height" constant="52" id="lty-c6-zPP"/>
+                    </constraints>
+                    <state key="normal" title="Pop To Root"/>
+                    <connections>
+                        <action selector="popToRoot:" destination="-1" eventType="touchUpInside" id="X5d-bP-9iN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.88015525531784011" blue="0.91362168922830611" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="My3-n8-qEZ" firstAttribute="top" secondItem="t3W-MJ-fDS" secondAttribute="bottom" constant="35" id="It3-tO-F2j"/>
+                <constraint firstItem="sib-qq-vlD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="29" id="Ki9-nk-sbi"/>
+                <constraint firstAttribute="trailing" secondItem="t3W-MJ-fDS" secondAttribute="trailing" constant="30" id="N8Z-25-xkH"/>
+                <constraint firstAttribute="trailing" secondItem="My3-n8-qEZ" secondAttribute="trailing" constant="30" id="ZbV-sI-gMO"/>
+                <constraint firstItem="sib-qq-vlD" firstAttribute="top" secondItem="t3W-MJ-fDS" secondAttribute="bottom" constant="29" id="fzB-NM-aMg"/>
+                <constraint firstItem="t3W-MJ-fDS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="42" id="lVP-9F-K0p"/>
+                <constraint firstItem="t3W-MJ-fDS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="112" id="uKC-xZ-CmV"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="470" y="395"/>
+        </view>
+    </objects>
+</document>
