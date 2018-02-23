@@ -1,15 +1,16 @@
 # LSPanSwiper
-几行代码实现交互式push pop动画
+## 几行代码实现交互式push pop动画
 
-## 开启设置只需要在UINavigationController里写以下代码
+### 开启设置只需要在UINavigationController里写以下代码
 ```
 -(void)viewDidLoad
 {
     [super viewDidLoad];
     [self openSwiper];
+    //self.canInteractive=NO;//所有界面禁用交互式pop动画
 }
 ```
-## 默认所有界面都可以交互式pop，默认push,pop动画为系统样式，如果想修改默认动画，在UINavigationController里实现以下代理方法
+### 默认所有界面都可以交互式pop，默认push,pop动画为系统样式，如果想修改默认动画，在UINavigationController里实现以下代理方法
 ```
 -(LSTransitionAnimator *)swiperAnimatorForDefaultWithIsPush:(BOOL)isPush
 {
@@ -21,7 +22,7 @@
 }
 ```
 
-## 如果想禁用所有界面pop交互式动画，则在UINavigationController里
+### 如果想禁用所有界面pop交互式动画，则在UINavigationController里
 
 ```
 -(void)viewDidLoad
@@ -33,7 +34,7 @@
 ```
 
 
-## 如果某个UIViewController想要自定义push动画
+### 如果某个UIViewController想要自定义push动画
 
 ```
 - (void)viewDidLoad {
@@ -44,7 +45,7 @@
 }
 
 ```
-## 如果自定义了交互式push动画,则需要实现以下代理方法，来告诉需要push哪个VC
+### 如果自定义了交互式push动画,则需要实现以下代理方法，来告诉需要push哪个VC
 ```
 - (UIViewController *)swiperBeginPushToNextController:(LSPanSwiper *)swiper
 {
@@ -52,7 +53,7 @@
     return controller;
 }
 ```
-## 如果某个UIViewController想要自定义pop动画
+### 如果某个UIViewController想要自定义pop动画
 
 ```
 - (void)viewDidLoad {
