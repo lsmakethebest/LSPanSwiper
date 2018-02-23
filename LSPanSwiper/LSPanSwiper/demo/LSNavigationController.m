@@ -21,7 +21,6 @@
 {
     [super viewDidLoad];
     [self openSwiper];
-
 }
 
 
@@ -29,7 +28,7 @@
 //{
 //    if (isPush) {
 //        return [LSPushAnimator new];
-//    }else{        
+//    }else{
 //        return  [LSPopAnimator new];
 //    }
 //}

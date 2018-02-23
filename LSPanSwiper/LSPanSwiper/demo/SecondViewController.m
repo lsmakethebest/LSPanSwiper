@@ -25,7 +25,7 @@
     self.pushAnimator.canInteractive=YES;
     
     self.popAnimator=[PopAnimator2 new];
-    self.popAnimator.canInteractive=YES;
+    self.popAnimator.canInteractive=NO;
     NSInteger count = self.navigationController.viewControllers.count;
     NSString *name = NSStringFromClass([self class]);
     self.label.text = [NSString stringWithFormat:@"第 %@ 个\n%@",@(count),name];

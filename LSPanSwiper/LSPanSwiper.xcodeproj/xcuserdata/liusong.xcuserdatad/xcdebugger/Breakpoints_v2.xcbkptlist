@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/demo/FirstViewController.m"
-            timestampString = "541070130.88563"
+            timestampString = "541071001.814757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSPanSwiper.m"
-            timestampString = "541070130.88573"
+            timestampString = "541071001.814853"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "252"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSPanSwiper.m"
-            timestampString = "541070130.885808"
+            timestampString = "541071001.81493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "249"
@@ -128,6 +128,22 @@
             startingLineNumber = "72"
             endingLineNumber = "72"
             landmarkName = "-animateTransition:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LSPanSwiper/LSPanSwiper/LSPanSwiper.m"
+            timestampString = "541071001.8151489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-panGrBegan:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
