@@ -65,6 +65,6 @@
     //nav.canInteractive=YES   self.popAnimator.canInteractive=NO;   无交互动画
 }
 ```
-![image](https://github.com/lsmakethebest/LSTreeLoading/blob/master/1.gif)
+![image](https://github.com/lsmakethebest/LSPanSwiper/blob/master/1.gif)
 
 
