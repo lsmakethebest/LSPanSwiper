@@ -1,6 +1,6 @@
 # LSPanSwiper
 ## 几行代码实现交互式push pop动画
-
+![image](https://github.com/lsmakethebest/LSPanSwiper/blob/master/1.gif
 ### 开启设置只需要在UINavigationController里写以下代码
 ```
 -(void)viewDidLoad
@@ -65,6 +65,6 @@
     //nav.canInteractive=YES   self.popAnimator.canInteractive=NO;   无交互动画
 }
 ```
-![image](https://github.com/lsmakethebest/LSPanSwiper/blob/master/1.gif)
+)
 
 
