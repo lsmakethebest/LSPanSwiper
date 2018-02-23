@@ -11,9 +11,6 @@
 
 @interface UINavigationController (LSInteractiveTransition)
 
-//所有界面都可以交互式push动画 当设置为NO时，部分界面需要交互式动画需要设置LSTransitionAnimator.canInteractive=YES
-@property (nonatomic,assign) BOOL canInteractivePush;
-//所有界面都可以交互式pop动画 和上面相同
 @property (nonatomic,assign) BOOL canInteractivePop;
 @property (nonatomic,strong) LSPanSwiper *swiper;
 

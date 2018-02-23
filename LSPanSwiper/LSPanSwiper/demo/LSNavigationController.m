@@ -21,8 +21,6 @@
 {
     [super viewDidLoad];
     [self openSwiper];
-    self.canInteractivePush=YES;
-    self.canInteractivePop=YES;
 
 }
 

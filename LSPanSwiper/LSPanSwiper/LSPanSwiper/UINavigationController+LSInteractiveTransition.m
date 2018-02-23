@@ -10,17 +10,6 @@
 
 @implementation UINavigationController (LSInteractiveTransition)
 
--(void)setCanInteractivePush:(BOOL)canInteractivePush
-{
-    if (self.swiper) {
-        self.swiper.canInteractivePush=canInteractivePush;
-    }
-
-}
--(BOOL)canInteractivePush
-{
-    return self.swiper.canInteractivePush;
-}
 -(void)setCanInteractivePop:(BOOL)canInteractivePop{
     if (self.swiper) {
         self.swiper.canInteractivePop=canInteractivePop;
@@ -42,8 +31,7 @@
 
 -(void)openSwiper
 {
-      self.swiper = [[LSPanSwiper alloc] initWithNavigationController:self];
-    self.swiper.canInteractivePush=NO;
+    self.swiper = [[LSPanSwiper alloc] initWithNavigationController:self];
     self.swiper.canInteractivePop=YES;
 }
 

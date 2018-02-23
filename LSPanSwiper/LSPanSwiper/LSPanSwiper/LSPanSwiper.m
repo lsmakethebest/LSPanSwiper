@@ -115,7 +115,7 @@ typedef NS_ENUM(NSInteger, LSPanSwiperDirection) {
     
       UIViewController *viewController=self.navigationController.viewControllers.lastObject;
     if (_panDirection==LSPanSwiperDirectionLeft) {
-        if (!self.canInteractivePush||!viewController.pushAnimator.canInteractive) {
+        if (!viewController.pushAnimator.canInteractive) {
             return;
         }
         
