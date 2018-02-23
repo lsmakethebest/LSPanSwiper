@@ -30,6 +30,8 @@
 		281B9503203FEFA700925F2D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281B94FA203FEFA700925F2D /* SecondViewController.xib */; };
 		281B9507203FF2A000925F2D /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B9505203FF2A000925F2D /* ThreeViewController.m */; };
 		281B9508203FF2A000925F2D /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281B9506203FF2A000925F2D /* ThreeViewController.xib */; };
+		28554BBB204019D400887669 /* PushCircleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BBA204019D400887669 /* PushCircleAnimator.m */; };
+		28554BC120401BE100887669 /* PopCircleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BC020401BE100887669 /* PopCircleAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,10 @@
 		281B9504203FF2A000925F2D /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		281B9505203FF2A000925F2D /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		281B9506203FF2A000925F2D /* ThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
+		28554BB9204019D400887669 /* PushCircleAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushCircleAnimator.h; sourceTree = "<group>"; };
+		28554BBA204019D400887669 /* PushCircleAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushCircleAnimator.m; sourceTree = "<group>"; };
+		28554BBF20401BE100887669 /* PopCircleAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopCircleAnimator.h; sourceTree = "<group>"; };
+		28554BC020401BE100887669 /* PopCircleAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopCircleAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,10 +227,14 @@
 		281B94EA203FEFA700925F2D /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				281B94ED203FEFA700925F2D /* PopAnimator2.h */,
-				281B94EE203FEFA700925F2D /* PopAnimator2.m */,
 				281B94F1203FEFA700925F2D /* PushAnimator2.h */,
 				281B94F2203FEFA700925F2D /* PushAnimator2.m */,
+				281B94ED203FEFA700925F2D /* PopAnimator2.h */,
+				281B94EE203FEFA700925F2D /* PopAnimator2.m */,
+				28554BB9204019D400887669 /* PushCircleAnimator.h */,
+				28554BBA204019D400887669 /* PushCircleAnimator.m */,
+				28554BBF20401BE100887669 /* PopCircleAnimator.h */,
+				28554BC020401BE100887669 /* PopCircleAnimator.m */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
@@ -379,6 +389,8 @@
 				281B9502203FEFA700925F2D /* SecondViewController.m in Sources */,
 				281B9463203FEDC700925F2D /* AppDelegate.m in Sources */,
 				281B94FE203FEFA700925F2D /* PushAnimator2.m in Sources */,
+				28554BBB204019D400887669 /* PushCircleAnimator.m in Sources */,
+				28554BC120401BE100887669 /* PopCircleAnimator.m in Sources */,
 				281B94FC203FEFA700925F2D /* PopAnimator2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

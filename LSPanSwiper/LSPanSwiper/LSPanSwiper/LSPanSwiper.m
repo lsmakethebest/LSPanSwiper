@@ -149,7 +149,7 @@ typedef NS_ENUM(NSInteger, LSPanSwiperDirection) {
     if (!self.beginAnimation) {
         return;
     }
-    NSLog(@"progress:%lf",progress);
+//    NSLog(@"progress:%lf",progress);
     if (_panDirection==LSPanSwiperDirectionLeft) {
         if (progress>0) {
             progress=0;

@@ -11,6 +11,7 @@
 #import "FirstViewController.h"
 #import "PopAnimator2.h"
 #import "PushAnimator2.h"
+#import "PopCircleAnimator.h"
 
 @interface SecondViewController ()<LSPanSwiperDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -21,11 +22,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
     self.pushAnimator=[PushAnimator2 new];
     self.pushAnimator.canInteractive=YES;
+     if(arc4random()%2){
+         self.popAnimator=[PopAnimator2 new];
+         self.popAnimator.canInteractive=YES;
+     }else{
+         self.popAnimator=[PopCircleAnimator new];
+        self.popAnimator.canInteractive=YES;
+     }
     
-    self.popAnimator=[PopAnimator2 new];
-    self.popAnimator.canInteractive=NO;
+    
+    
+    
     NSInteger count = self.navigationController.viewControllers.count;
     NSString *name = NSStringFromClass([self class]);
     self.label.text = [NSString stringWithFormat:@"第 %@ 个\n%@",@(count),name];

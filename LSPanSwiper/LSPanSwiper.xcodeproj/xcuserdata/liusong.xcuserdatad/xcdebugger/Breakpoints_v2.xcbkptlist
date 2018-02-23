@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/demo/FirstViewController.m"
-            timestampString = "541071001.814757"
+            timestampString = "541073817.633715"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-push:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSPanSwiper.m"
-            timestampString = "541071001.814853"
+            timestampString = "541073817.63379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "252"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSPanSwiper.m"
-            timestampString = "541071001.81493"
+            timestampString = "541073817.633846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "249"
@@ -54,11 +54,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/demo/Animator/PushAnimator2.m"
-            timestampString = "541069070.549087"
+            timestampString = "541072197.430225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -70,11 +70,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/demo/Animator/PushAnimator2.m"
-            timestampString = "541069070.549186"
+            timestampString = "541072197.430315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -134,16 +134,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LSPanSwiper/LSPanSwiper/LSPanSwiper.m"
-            timestampString = "541071001.8151489"
+            filePath = "LSPanSwiper/demo/Animator/PopCircleAnimator.m"
+            timestampString = "541073817.634069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "-panGrBegan:"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-animationDidStop:finished:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

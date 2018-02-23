@@ -11,6 +11,7 @@
 #import "ThreeViewController.h"
 #import "PushAnimator2.h"
 #import "LSPanSwiperKit.h"
+#import "PushCircleAnimator.h"
 @interface FirstViewController () <LSPanSwiperDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
@@ -22,8 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.pushAnimator=[PushAnimator2 new];
-    self.pushAnimator.canInteractive=YES;
+
+        self.pushAnimator=[PushCircleAnimator new];
+        self.pushAnimator.canInteractive=YES;
+    
+
+//        self.pushAnimator=[PushAnimator2 new];
+//        self.pushAnimator.canInteractive=YES;
+
+    
+    
+    
     NSInteger count = self.navigationController.viewControllers.count;
     NSString *name = NSStringFromClass([self class]);
     self.label.text = [NSString stringWithFormat:@"第 %@ 个\n%@",@(count),name];
