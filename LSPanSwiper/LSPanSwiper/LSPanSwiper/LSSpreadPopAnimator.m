@@ -10,11 +10,19 @@
 #import "UIViewController+LSInteractiveTransition.h"
 
 @implementation LSSpreadPopAnimator
+
+-(instancetype)init
+{
+    if (self=[super init]) {
+        self.canInteractive=NO;
+    }
+    return self;
+}
+
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     return 0.25;
 }
-
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {

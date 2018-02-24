@@ -31,7 +31,6 @@
 //         self.popAnimator.canInteractive=YES;
 //     }else{
          self.popAnimator=[LSSpreadPopAnimator new];
-        self.popAnimator.canInteractive=NO;
 //     }
     
     

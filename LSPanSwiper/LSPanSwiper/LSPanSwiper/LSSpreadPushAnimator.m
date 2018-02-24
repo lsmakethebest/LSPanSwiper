@@ -19,6 +19,13 @@
 
 @implementation LSSpreadPushAnimator
 
+-(instancetype)init
+{
+    if (self=[super init]) {
+        self.canInteractive=NO;
+    }
+    return self;
+}
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
