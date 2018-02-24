@@ -1,5 +1,5 @@
 //
-//  PopCircleAnimator.h
+//  LSSpreadPushAnimator.h
 //  LSPanSwiper
 //
 //  Created by liusong on 2018/2/23.
@@ -8,6 +8,6 @@
 
 #import "LSTransitionAnimator.h"
 
-@interface PopCircleAnimator : LSTransitionAnimator
+@interface LSSpreadPushAnimator : LSTransitionAnimator
 
 @end
