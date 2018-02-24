@@ -11,8 +11,13 @@
 #import "ThreeViewController.h"
 #import "PushAnimator2.h"
 #import "LSPanSwiperKit.h"
-#import "PushCircleAnimator.h"
+#import "LSSpreadPushAnimator.h"
 @interface FirstViewController () <LSPanSwiperDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+@property (weak, nonatomic) IBOutlet UIButton *button3;
+
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
@@ -23,16 +28,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
-        self.pushAnimator=[PushCircleAnimator new];
-        self.pushAnimator.canInteractive=YES;
+    self.button1.layer.cornerRadius=54;
+    self.button1.clipsToBounds=YES;
+    self.pushAnimator=[LSSpreadPushAnimator new];
+    self.pushAnimator.canInteractive=NO;//此动画使用CABasicAnimation,在ios11上不支持交互式动画，原因未知
     
 
 //        self.pushAnimator=[PushAnimator2 new];
 //        self.pushAnimator.canInteractive=YES;
 
-    
-    
     
     NSInteger count = self.navigationController.viewControllers.count;
     NSString *name = NSStringFromClass([self class]);
@@ -42,6 +46,22 @@
 
 #pragma mark -- Button Response --
 - (IBAction)push:(id)sender {
+    self.pushAnimator.enabled=YES;
+    self.pushAnimator.isCircel=YES;
+    self.pushAnimator.fromRect=self.button1.frame;
+    SecondViewController *controller = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+#pragma mark -- Button Response --
+- (IBAction)push2:(id)sender {
+    self.pushAnimator.enabled=YES;
+    self.pushAnimator.isCircel=NO;
+    self.pushAnimator.fromRect=self.button2.frame;
+    SecondViewController *controller = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+- (IBAction)push3:(id)sender {
+    self.pushAnimator.enabled=NO;
     ThreeViewController *controller = [[ThreeViewController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
 }

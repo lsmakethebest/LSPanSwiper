@@ -11,17 +11,20 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
             <connections>
+                <outlet property="button1" destination="yt7-r3-f9w" id="8rp-2T-U12"/>
+                <outlet property="button2" destination="WQR-Nz-GJe" id="DML-ML-AFK"/>
+                <outlet property="button3" destination="aa7-Da-RDD" id="vhv-MI-dBF"/>
                 <outlet property="label" destination="x9M-AO-ppA" id="yFl-nD-bE5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9M-AO-ppA">
-                    <rect key="frame" x="60" y="107" width="200" height="83"/>
+                    <rect key="frame" x="60" y="107" width="255" height="83"/>
                     <color key="backgroundColor" red="0.83657909729440394" green="0.77679289889661551" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="83" id="1Et-Rs-Gpn"/>
@@ -31,19 +34,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt7-r3-f9w">
-                    <rect key="frame" x="22" y="219" width="104" height="50"/>
+                    <rect key="frame" x="22" y="219" width="108" height="108"/>
                     <color key="backgroundColor" red="1" green="0.67786427046313991" blue="0.94587495004533217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="104" id="gwd-gi-vrU"/>
-                        <constraint firstAttribute="height" constant="50" id="kTc-CU-9Le"/>
+                        <constraint firstAttribute="width" constant="108" id="gwd-gi-vrU"/>
+                        <constraint firstAttribute="height" constant="108" id="kTc-CU-9Le"/>
                     </constraints>
-                    <state key="normal" title="Push"/>
+                    <state key="normal" title="Push-&gt;Second"/>
                     <connections>
                         <action selector="push:" destination="-1" eventType="touchUpInside" id="vdj-Aa-lTV"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfp-EL-XpS">
-                    <rect key="frame" x="164" y="219" width="141" height="50"/>
+                    <rect key="frame" x="219" y="219" width="141" height="50"/>
                     <color key="backgroundColor" red="1" green="0.79280792549495316" blue="0.47536507467137568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="JM3-Mj-8Hn"/>
@@ -54,19 +57,47 @@
                         <action selector="popToRoot:" destination="-1" eventType="touchUpInside" id="vS4-fY-GWW"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQR-Nz-GJe">
+                    <rect key="frame" x="16" y="352" width="135" height="50"/>
+                    <color key="backgroundColor" red="0.3525134035192819" green="0.617608266614038" blue="0.8200745558375635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="7GO-RL-Eds"/>
+                        <constraint firstAttribute="height" constant="50" id="YQp-Iz-4x3"/>
+                    </constraints>
+                    <state key="normal" title="Push-&gt;Second"/>
+                    <connections>
+                        <action selector="push2:" destination="-1" eventType="touchUpInside" id="obc-Iv-1s1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa7-Da-RDD">
+                    <rect key="frame" x="28" y="425" width="97" height="52"/>
+                    <color key="backgroundColor" red="0.8200745558375635" green="0.77362476049539852" blue="0.67239129637580464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="HpL-dq-lIU"/>
+                        <constraint firstAttribute="height" constant="52" id="a7t-OF-1wN"/>
+                    </constraints>
+                    <state key="normal" title="Push-&gt;three"/>
+                    <connections>
+                        <action selector="push3:" destination="-1" eventType="touchUpInside" id="jEO-rI-2jq"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.88329205120844423" green="0.87319646901241232" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="x9M-AO-ppA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="51u-JS-3yM"/>
                 <constraint firstItem="yt7-r3-f9w" firstAttribute="top" secondItem="x9M-AO-ppA" secondAttribute="bottom" constant="29" id="PcQ-R0-6ve"/>
                 <constraint firstItem="dfp-EL-XpS" firstAttribute="top" secondItem="x9M-AO-ppA" secondAttribute="bottom" constant="29" id="QMD-3Q-c9S"/>
+                <constraint firstItem="aa7-Da-RDD" firstAttribute="top" secondItem="WQR-Nz-GJe" secondAttribute="bottom" constant="23" id="c2M-5c-2w3"/>
+                <constraint firstItem="WQR-Nz-GJe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="cqf-hw-NfP"/>
                 <constraint firstAttribute="trailing" secondItem="dfp-EL-XpS" secondAttribute="trailing" constant="15" id="hK4-bN-TF5"/>
+                <constraint firstItem="aa7-Da-RDD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="iyf-gT-nOP"/>
+                <constraint firstItem="WQR-Nz-GJe" firstAttribute="top" secondItem="yt7-r3-f9w" secondAttribute="bottom" constant="25" id="pQ7-22-LdX"/>
                 <constraint firstAttribute="trailing" secondItem="x9M-AO-ppA" secondAttribute="trailing" constant="60" id="r4n-ao-cYk"/>
                 <constraint firstItem="yt7-r3-f9w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="tlR-FT-scM"/>
                 <constraint firstItem="x9M-AO-ppA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="w08-Fc-X7V"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <point key="canvasLocation" x="340" y="395"/>
+            <point key="canvasLocation" x="339.5" y="394.5"/>
         </view>
     </objects>
 </document>

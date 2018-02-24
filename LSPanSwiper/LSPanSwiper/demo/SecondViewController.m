@@ -11,7 +11,7 @@
 #import "FirstViewController.h"
 #import "PopAnimator2.h"
 #import "PushAnimator2.h"
-#import "PopCircleAnimator.h"
+#import "LSSpreadPopAnimator.h"
 
 @interface SecondViewController ()<LSPanSwiperDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -26,13 +26,13 @@
     
     self.pushAnimator=[PushAnimator2 new];
     self.pushAnimator.canInteractive=YES;
-     if(arc4random()%2){
-         self.popAnimator=[PopAnimator2 new];
-         self.popAnimator.canInteractive=YES;
-     }else{
-         self.popAnimator=[PopCircleAnimator new];
-        self.popAnimator.canInteractive=YES;
-     }
+//     if(arc4random()%2){
+//         self.popAnimator=[PopAnimator2 new];
+//         self.popAnimator.canInteractive=YES;
+//     }else{
+         self.popAnimator=[LSSpreadPopAnimator new];
+        self.popAnimator.canInteractive=NO;
+//     }
     
     
     

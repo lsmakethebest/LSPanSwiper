@@ -1,6 +1,6 @@
 # LSPanSwiper
 ## 几行代码实现交互式push pop动画,可以随意自定义push，pop动画
-![image](https://github.com/lsmakethebest/LSPanSwiper/blob/master/1.gif)
+![image](https://github.com/lsmakethebest/LSPanSwiper/blob/master/2.gif)
 ### 开启设置只需要在UINavigationController里写以下代码
 ```
 -(void)viewDidLoad
@@ -65,6 +65,39 @@
     //nav.canInteractive=YES   self.popAnimator.canInteractive=NO;   无交互动画
 }
 ```
+### 如果想要扩散动画
+```
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.pushAnimator=[LSSpreadPushAnimator new];
+    self.pushAnimator.canInteractive=NO;//此动画使用CABasicAnimation,在ios11上不支持交互式动画，原因未知
+}
+
+//圆形扩散动画
+- (IBAction)push:(id)sender {
+    self.pushAnimator.enabled=YES;//此处修改为YES因为下面有设置weiNO的地方
+    self.pushAnimator.isCircel=YES;
+    self.pushAnimator.fromRect=self.button1.frame;
+    SecondViewController *controller = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+//矩形扩散动画
+- (IBAction)push2:(id)sender {
+    self.pushAnimator.enabled=YES;
+    self.pushAnimator.isCircel=NO;
+    self.pushAnimator.fromRect=self.button2.frame;
+    SecondViewController *controller = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+//同一界面有多自定义动画，还想使用默认push动画，push时只需要设置自定义动画的enabled=NO,需要时在打开就好了
+- (IBAction)push3:(id)sender {
+    self.pushAnimator.enabled=NO;
+    ThreeViewController *controller = [[ThreeViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+```
+### 注意点在iOS11上使用CABasicAnimation实现动画，则不支持交互式，具体原因未找到，所以动画尽量使用UIView animation
 
 
 

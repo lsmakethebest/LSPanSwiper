@@ -21,6 +21,8 @@
 {
     [super viewDidLoad];
     [self openSwiper];
+    NSLog(@"fsdflsjdflksd:%d",[self conformsToProtocol:@protocol(LSPanSwiperDelegate)]);
+    
 }
 
 

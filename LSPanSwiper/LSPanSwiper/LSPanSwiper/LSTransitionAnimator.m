@@ -10,6 +10,13 @@
 
 @implementation LSTransitionAnimator
 
+-(instancetype)init
+{
+    if (self=[super init]) {
+        self.enabled=YES;
+    }
+    return self;
+}
 
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext
 {

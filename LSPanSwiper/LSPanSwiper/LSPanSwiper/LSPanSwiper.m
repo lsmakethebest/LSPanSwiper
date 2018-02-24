@@ -113,6 +113,7 @@ typedef NS_ENUM(NSInteger, LSPanSwiperDirection) {
 
 - (void)panGrBegan:(UIPanGestureRecognizer *)recognizer{
     
+    self.animator=nil;
       UIViewController *viewController=self.navigationController.viewControllers.lastObject;
     if (_panDirection==LSPanSwiperDirectionLeft) {
         if (!viewController.pushAnimator.canInteractive) {
@@ -216,7 +217,7 @@ typedef NS_ENUM(NSInteger, LSPanSwiperDirection) {
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 {
     if (operation==UINavigationControllerOperationPush) {
-        if(fromVC.pushAnimator){
+        if(fromVC.pushAnimator&&fromVC.pushAnimator.enabled){
             fromVC.pushAnimator.delegate=self;
             self.animator=fromVC.pushAnimator;
             return fromVC.pushAnimator;
@@ -229,7 +230,7 @@ typedef NS_ENUM(NSInteger, LSPanSwiperDirection) {
             
         }
     }else{
-        if(fromVC.popAnimator)
+        if(fromVC.popAnimator&&fromVC.popAnimator)
         {
             fromVC.popAnimator.delegate=self;
             self.animator=fromVC.popAnimator;

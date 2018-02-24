@@ -13,15 +13,7 @@
 		281B9471203FEDC700925F2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B9470203FEDC700925F2D /* main.m */; };
 		281B947B203FEDC800925F2D /* LSPanSwiperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B947A203FEDC800925F2D /* LSPanSwiperTests.m */; };
 		281B9486203FEDC800925F2D /* LSPanSwiperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B9485203FEDC800925F2D /* LSPanSwiperUITests.m */; };
-		281B94A6203FEE6500925F2D /* LSInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B9498203FEE6400925F2D /* LSInteractiveTransition.m */; };
-		281B94A7203FEE6500925F2D /* LSPanSwiper.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B949A203FEE6500925F2D /* LSPanSwiper.m */; };
-		281B94A8203FEE6500925F2D /* LSTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B949D203FEE6500925F2D /* LSTransitionAnimator.m */; };
-		281B94A9203FEE6500925F2D /* NSObject+TransitionContextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B949F203FEE6500925F2D /* NSObject+TransitionContextHelper.m */; };
-		281B94AB203FEE6500925F2D /* UINavigationController+LSInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B94A3203FEE6500925F2D /* UINavigationController+LSInteractiveTransition.m */; };
-		281B94AC203FEE6500925F2D /* UIViewController+LSInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B94A5203FEE6500925F2D /* UIViewController+LSInteractiveTransition.m */; };
-		281B94FB203FEFA700925F2D /* LSPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B94EC203FEFA700925F2D /* LSPopAnimator.m */; };
 		281B94FC203FEFA700925F2D /* PopAnimator2.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B94EE203FEFA700925F2D /* PopAnimator2.m */; };
-		281B94FD203FEFA700925F2D /* LSPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B94F0203FEFA700925F2D /* LSPushAnimator.m */; };
 		281B94FE203FEFA700925F2D /* PushAnimator2.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B94F2203FEFA700925F2D /* PushAnimator2.m */; };
 		281B94FF203FEFA700925F2D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B94F4203FEFA700925F2D /* FirstViewController.m */; };
 		281B9500203FEFA700925F2D /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281B94F5203FEFA700925F2D /* FirstViewController.xib */; };
@@ -30,8 +22,16 @@
 		281B9503203FEFA700925F2D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281B94FA203FEFA700925F2D /* SecondViewController.xib */; };
 		281B9507203FF2A000925F2D /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B9505203FF2A000925F2D /* ThreeViewController.m */; };
 		281B9508203FF2A000925F2D /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281B9506203FF2A000925F2D /* ThreeViewController.xib */; };
-		28554BBB204019D400887669 /* PushCircleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BBA204019D400887669 /* PushCircleAnimator.m */; };
-		28554BC120401BE100887669 /* PopCircleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BC020401BE100887669 /* PopCircleAnimator.m */; };
+		28554BDF204114F100887669 /* LSInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BCB204114F100887669 /* LSInteractiveTransition.m */; };
+		28554BE0204114F100887669 /* LSPanSwiper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BCD204114F100887669 /* LSPanSwiper.m */; };
+		28554BE1204114F100887669 /* LSPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BD0204114F100887669 /* LSPopAnimator.m */; };
+		28554BE2204114F100887669 /* LSPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BD2204114F100887669 /* LSPushAnimator.m */; };
+		28554BE3204114F100887669 /* LSSpreadPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BD4204114F100887669 /* LSSpreadPopAnimator.m */; };
+		28554BE4204114F100887669 /* LSSpreadPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BD6204114F100887669 /* LSSpreadPushAnimator.m */; };
+		28554BE5204114F100887669 /* LSTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BD8204114F100887669 /* LSTransitionAnimator.m */; };
+		28554BE6204114F100887669 /* NSObject+TransitionContextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BDA204114F100887669 /* NSObject+TransitionContextHelper.m */; };
+		28554BE7204114F100887669 /* UINavigationController+LSInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BDC204114F100887669 /* UINavigationController+LSInteractiveTransition.m */; };
+		28554BE8204114F100887669 /* UIViewController+LSInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554BDE204114F100887669 /* UIViewController+LSInteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,25 +65,8 @@
 		281B9481203FEDC800925F2D /* LSPanSwiperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSPanSwiperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281B9485203FEDC800925F2D /* LSPanSwiperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSPanSwiperUITests.m; sourceTree = "<group>"; };
 		281B9487203FEDC800925F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		281B9497203FEE6400925F2D /* LSInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSInteractiveTransition.h; sourceTree = "<group>"; };
-		281B9498203FEE6400925F2D /* LSInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSInteractiveTransition.m; sourceTree = "<group>"; };
-		281B9499203FEE6500925F2D /* LSPanSwiper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPanSwiper.h; sourceTree = "<group>"; };
-		281B949A203FEE6500925F2D /* LSPanSwiper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPanSwiper.m; sourceTree = "<group>"; };
-		281B949B203FEE6500925F2D /* LSPanSwiperKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPanSwiperKit.h; sourceTree = "<group>"; };
-		281B949C203FEE6500925F2D /* LSTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTransitionAnimator.h; sourceTree = "<group>"; };
-		281B949D203FEE6500925F2D /* LSTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTransitionAnimator.m; sourceTree = "<group>"; };
-		281B949E203FEE6500925F2D /* NSObject+TransitionContextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TransitionContextHelper.h"; sourceTree = "<group>"; };
-		281B949F203FEE6500925F2D /* NSObject+TransitionContextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TransitionContextHelper.m"; sourceTree = "<group>"; };
-		281B94A2203FEE6500925F2D /* UINavigationController+LSInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LSInteractiveTransition.h"; sourceTree = "<group>"; };
-		281B94A3203FEE6500925F2D /* UINavigationController+LSInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LSInteractiveTransition.m"; sourceTree = "<group>"; };
-		281B94A4203FEE6500925F2D /* UIViewController+LSInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LSInteractiveTransition.h"; sourceTree = "<group>"; };
-		281B94A5203FEE6500925F2D /* UIViewController+LSInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LSInteractiveTransition.m"; sourceTree = "<group>"; };
-		281B94EB203FEFA700925F2D /* LSPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPopAnimator.h; sourceTree = "<group>"; };
-		281B94EC203FEFA700925F2D /* LSPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPopAnimator.m; sourceTree = "<group>"; };
 		281B94ED203FEFA700925F2D /* PopAnimator2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimator2.h; sourceTree = "<group>"; };
 		281B94EE203FEFA700925F2D /* PopAnimator2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimator2.m; sourceTree = "<group>"; };
-		281B94EF203FEFA700925F2D /* LSPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPushAnimator.h; sourceTree = "<group>"; };
-		281B94F0203FEFA700925F2D /* LSPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPushAnimator.m; sourceTree = "<group>"; };
 		281B94F1203FEFA700925F2D /* PushAnimator2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimator2.h; sourceTree = "<group>"; };
 		281B94F2203FEFA700925F2D /* PushAnimator2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimator2.m; sourceTree = "<group>"; };
 		281B94F3203FEFA700925F2D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -97,10 +80,27 @@
 		281B9504203FF2A000925F2D /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		281B9505203FF2A000925F2D /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		281B9506203FF2A000925F2D /* ThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
-		28554BB9204019D400887669 /* PushCircleAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushCircleAnimator.h; sourceTree = "<group>"; };
-		28554BBA204019D400887669 /* PushCircleAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushCircleAnimator.m; sourceTree = "<group>"; };
-		28554BBF20401BE100887669 /* PopCircleAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopCircleAnimator.h; sourceTree = "<group>"; };
-		28554BC020401BE100887669 /* PopCircleAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopCircleAnimator.m; sourceTree = "<group>"; };
+		28554BCA204114F100887669 /* LSInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSInteractiveTransition.h; sourceTree = "<group>"; };
+		28554BCB204114F100887669 /* LSInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSInteractiveTransition.m; sourceTree = "<group>"; };
+		28554BCC204114F100887669 /* LSPanSwiper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPanSwiper.h; sourceTree = "<group>"; };
+		28554BCD204114F100887669 /* LSPanSwiper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPanSwiper.m; sourceTree = "<group>"; };
+		28554BCE204114F100887669 /* LSPanSwiperKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPanSwiperKit.h; sourceTree = "<group>"; };
+		28554BCF204114F100887669 /* LSPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPopAnimator.h; sourceTree = "<group>"; };
+		28554BD0204114F100887669 /* LSPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPopAnimator.m; sourceTree = "<group>"; };
+		28554BD1204114F100887669 /* LSPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPushAnimator.h; sourceTree = "<group>"; };
+		28554BD2204114F100887669 /* LSPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPushAnimator.m; sourceTree = "<group>"; };
+		28554BD3204114F100887669 /* LSSpreadPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSpreadPopAnimator.h; sourceTree = "<group>"; };
+		28554BD4204114F100887669 /* LSSpreadPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSpreadPopAnimator.m; sourceTree = "<group>"; };
+		28554BD5204114F100887669 /* LSSpreadPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSpreadPushAnimator.h; sourceTree = "<group>"; };
+		28554BD6204114F100887669 /* LSSpreadPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSpreadPushAnimator.m; sourceTree = "<group>"; };
+		28554BD7204114F100887669 /* LSTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTransitionAnimator.h; sourceTree = "<group>"; };
+		28554BD8204114F100887669 /* LSTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTransitionAnimator.m; sourceTree = "<group>"; };
+		28554BD9204114F100887669 /* NSObject+TransitionContextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TransitionContextHelper.h"; sourceTree = "<group>"; };
+		28554BDA204114F100887669 /* NSObject+TransitionContextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TransitionContextHelper.m"; sourceTree = "<group>"; };
+		28554BDB204114F100887669 /* UINavigationController+LSInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LSInteractiveTransition.h"; sourceTree = "<group>"; };
+		28554BDC204114F100887669 /* UINavigationController+LSInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LSInteractiveTransition.m"; sourceTree = "<group>"; };
+		28554BDD204114F100887669 /* UIViewController+LSInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LSInteractiveTransition.h"; sourceTree = "<group>"; };
+		28554BDE204114F100887669 /* UIViewController+LSInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LSInteractiveTransition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 		281B9460203FEDC700925F2D /* LSPanSwiper */ = {
 			isa = PBXGroup;
 			children = (
-				281B9496203FEE6400925F2D /* LSPanSwiper */,
+				28554BC9204114F100887669 /* LSPanSwiper */,
 				281B94E9203FEFA700925F2D /* demo */,
 				281B9461203FEDC700925F2D /* AppDelegate.h */,
 				281B9462203FEDC700925F2D /* AppDelegate.m */,
@@ -181,30 +181,6 @@
 			path = LSPanSwiperUITests;
 			sourceTree = "<group>";
 		};
-		281B9496203FEE6400925F2D /* LSPanSwiper */ = {
-			isa = PBXGroup;
-			children = (
-				281B949B203FEE6500925F2D /* LSPanSwiperKit.h */,
-				281B9497203FEE6400925F2D /* LSInteractiveTransition.h */,
-				281B9498203FEE6400925F2D /* LSInteractiveTransition.m */,
-				281B9499203FEE6500925F2D /* LSPanSwiper.h */,
-				281B949A203FEE6500925F2D /* LSPanSwiper.m */,
-				281B949C203FEE6500925F2D /* LSTransitionAnimator.h */,
-				281B949D203FEE6500925F2D /* LSTransitionAnimator.m */,
-				281B949E203FEE6500925F2D /* NSObject+TransitionContextHelper.h */,
-				281B949F203FEE6500925F2D /* NSObject+TransitionContextHelper.m */,
-				281B94A2203FEE6500925F2D /* UINavigationController+LSInteractiveTransition.h */,
-				281B94A3203FEE6500925F2D /* UINavigationController+LSInteractiveTransition.m */,
-				281B94A4203FEE6500925F2D /* UIViewController+LSInteractiveTransition.h */,
-				281B94A5203FEE6500925F2D /* UIViewController+LSInteractiveTransition.m */,
-				281B94EF203FEFA700925F2D /* LSPushAnimator.h */,
-				281B94F0203FEFA700925F2D /* LSPushAnimator.m */,
-				281B94EB203FEFA700925F2D /* LSPopAnimator.h */,
-				281B94EC203FEFA700925F2D /* LSPopAnimator.m */,
-			);
-			path = LSPanSwiper;
-			sourceTree = "<group>";
-		};
 		281B94E9203FEFA700925F2D /* demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,12 +207,36 @@
 				281B94F2203FEFA700925F2D /* PushAnimator2.m */,
 				281B94ED203FEFA700925F2D /* PopAnimator2.h */,
 				281B94EE203FEFA700925F2D /* PopAnimator2.m */,
-				28554BB9204019D400887669 /* PushCircleAnimator.h */,
-				28554BBA204019D400887669 /* PushCircleAnimator.m */,
-				28554BBF20401BE100887669 /* PopCircleAnimator.h */,
-				28554BC020401BE100887669 /* PopCircleAnimator.m */,
 			);
 			path = Animator;
+			sourceTree = "<group>";
+		};
+		28554BC9204114F100887669 /* LSPanSwiper */ = {
+			isa = PBXGroup;
+			children = (
+				28554BCA204114F100887669 /* LSInteractiveTransition.h */,
+				28554BCB204114F100887669 /* LSInteractiveTransition.m */,
+				28554BCC204114F100887669 /* LSPanSwiper.h */,
+				28554BCD204114F100887669 /* LSPanSwiper.m */,
+				28554BCE204114F100887669 /* LSPanSwiperKit.h */,
+				28554BCF204114F100887669 /* LSPopAnimator.h */,
+				28554BD0204114F100887669 /* LSPopAnimator.m */,
+				28554BD1204114F100887669 /* LSPushAnimator.h */,
+				28554BD2204114F100887669 /* LSPushAnimator.m */,
+				28554BD5204114F100887669 /* LSSpreadPushAnimator.h */,
+				28554BD6204114F100887669 /* LSSpreadPushAnimator.m */,
+				28554BD3204114F100887669 /* LSSpreadPopAnimator.h */,
+				28554BD4204114F100887669 /* LSSpreadPopAnimator.m */,
+				28554BD7204114F100887669 /* LSTransitionAnimator.h */,
+				28554BD8204114F100887669 /* LSTransitionAnimator.m */,
+				28554BD9204114F100887669 /* NSObject+TransitionContextHelper.h */,
+				28554BDA204114F100887669 /* NSObject+TransitionContextHelper.m */,
+				28554BDB204114F100887669 /* UINavigationController+LSInteractiveTransition.h */,
+				28554BDC204114F100887669 /* UINavigationController+LSInteractiveTransition.m */,
+				28554BDD204114F100887669 /* UIViewController+LSInteractiveTransition.h */,
+				28554BDE204114F100887669 /* UIViewController+LSInteractiveTransition.m */,
+			);
+			path = LSPanSwiper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,23 +374,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281B94AB203FEE6500925F2D /* UINavigationController+LSInteractiveTransition.m in Sources */,
-				281B94A9203FEE6500925F2D /* NSObject+TransitionContextHelper.m in Sources */,
-				281B94FD203FEFA700925F2D /* LSPushAnimator.m in Sources */,
-				281B94FB203FEFA700925F2D /* LSPopAnimator.m in Sources */,
+				28554BE6204114F100887669 /* NSObject+TransitionContextHelper.m in Sources */,
 				281B9471203FEDC700925F2D /* main.m in Sources */,
 				281B9501203FEFA700925F2D /* LSNavigationController.m in Sources */,
-				281B94A7203FEE6500925F2D /* LSPanSwiper.m in Sources */,
+				28554BE4204114F100887669 /* LSSpreadPushAnimator.m in Sources */,
 				281B9507203FF2A000925F2D /* ThreeViewController.m in Sources */,
-				281B94A8203FEE6500925F2D /* LSTransitionAnimator.m in Sources */,
-				281B94AC203FEE6500925F2D /* UIViewController+LSInteractiveTransition.m in Sources */,
+				28554BE5204114F100887669 /* LSTransitionAnimator.m in Sources */,
+				28554BE3204114F100887669 /* LSSpreadPopAnimator.m in Sources */,
+				28554BE8204114F100887669 /* UIViewController+LSInteractiveTransition.m in Sources */,
 				281B94FF203FEFA700925F2D /* FirstViewController.m in Sources */,
-				281B94A6203FEE6500925F2D /* LSInteractiveTransition.m in Sources */,
+				28554BDF204114F100887669 /* LSInteractiveTransition.m in Sources */,
+				28554BE7204114F100887669 /* UINavigationController+LSInteractiveTransition.m in Sources */,
+				28554BE2204114F100887669 /* LSPushAnimator.m in Sources */,
 				281B9502203FEFA700925F2D /* SecondViewController.m in Sources */,
+				28554BE0204114F100887669 /* LSPanSwiper.m in Sources */,
 				281B9463203FEDC700925F2D /* AppDelegate.m in Sources */,
 				281B94FE203FEFA700925F2D /* PushAnimator2.m in Sources */,
-				28554BBB204019D400887669 /* PushCircleAnimator.m in Sources */,
-				28554BC120401BE100887669 /* PopCircleAnimator.m in Sources */,
+				28554BE1204114F100887669 /* LSPopAnimator.m in Sources */,
 				281B94FC203FEFA700925F2D /* PopAnimator2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

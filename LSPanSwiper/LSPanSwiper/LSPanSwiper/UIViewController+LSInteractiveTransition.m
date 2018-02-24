@@ -32,6 +32,25 @@
 -(LSTransitionAnimator *)popAnimator{
     return  objc_getAssociatedObject(self, _cmd);
 }
+
+-(void)setIsCircle:(BOOL)isCircle
+{
+       objc_setAssociatedObject(self, @selector(isCircle), @(isCircle), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(BOOL)isCircle
+{
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
+}
+
+-(void)setFromRect:(CGRect)fromRect
+{
+    objc_setAssociatedObject(self, @selector(fromRect), @(fromRect), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+}
+-(CGRect)fromRect
+{
+    return [objc_getAssociatedObject(self, _cmd) CGRectValue];
+}
 +(void)load
 {
     Class dClass=[self class];
