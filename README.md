@@ -97,6 +97,7 @@
     [self.navigationController pushViewController:controller animated:YES];
 }
 ```
+### 使用了扩散push动画，pop如果用的是缩放pop动画，用圆缩放还是矩形缩放，系统会自动记录，如果用的是其他pop动画，则随意
 ### 注意点在iOS11上使用CABasicAnimation实现动画，则不支持交互式，具体原因未找到，所以动画尽量使用UIView animation
 
 
