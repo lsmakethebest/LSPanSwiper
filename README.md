@@ -6,7 +6,7 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self openSwiper];
-    //self.canInteractive=NO;//所有界面禁用交互式pop动画
+    //self.canInteractivePop=NO;//所有界面禁用交互式pop动画
 }
 ```
 ### 默认所有界面都可以交互式pop，默认push,pop动画为系统样式，如果想修改默认动画，在UINavigationController里实现以下代理方法
