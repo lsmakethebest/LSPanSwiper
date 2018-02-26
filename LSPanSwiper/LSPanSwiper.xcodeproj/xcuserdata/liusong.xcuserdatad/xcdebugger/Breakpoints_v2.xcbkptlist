@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/demo/Animator/PushAnimator2.m"
-            timestampString = "541072197.430225"
+            timestampString = "541324692.17711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/demo/Animator/PushAnimator2.m"
-            timestampString = "541072197.430315"
+            timestampString = "541324692.177179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSPushAnimator.m"
-            timestampString = "541069070.549256"
+            timestampString = "541324692.1772341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "-animateTransition:"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,27 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSPushAnimator.m"
-            timestampString = "541069070.54941"
+            timestampString = "541324692.1772929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-animateTransition:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LSPanSwiper/LSPanSwiper/LSPushAnimator.m"
-            timestampString = "541069070.5495059"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "-animateTransition:"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSPopAnimator.m"
-            timestampString = "541131508.13125"
+            timestampString = "541324692.177501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
@@ -234,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSSpreadPopAnimator.m"
-            timestampString = "541144356.947719"
+            timestampString = "541324692.177555"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -282,11 +266,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LSPanSwiper/LSPanSwiper/LSSpreadPopAnimator.m"
-            timestampString = "541144356.947917"
+            timestampString = "541324692.177604"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
+            landmarkName = "-animateTransition:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LSPanSwiper/LSPanSwiper/LSPushAnimator.m"
+            timestampString = "541324692.177651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "-animateTransition:"
             landmarkType = "7">
          </BreakpointContent>

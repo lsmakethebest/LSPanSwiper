@@ -81,6 +81,38 @@
     [maskLayerAnimation setValue:transitionContext forKey:@"transitionContext"];
     [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];
 
+    
+    //TabbarController hidesBottomBarWhenPushed
+    UITabBarController *tabBarController = fromVC.tabBarController;
+    UINavigationController *navController = fromVC.navigationController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    
+    BOOL shouldAddTabBarBackToTabBarController = NO;
+    BOOL hidesBottomBarWhenPushed = toVC.hidesBottomBarWhenPushed;
+    
+    BOOL tabBarControllerContainsToViewController = [tabBarController.viewControllers containsObject:fromVC];
+    BOOL tabBarControllerContainsNavController = [tabBarController.viewControllers containsObject:navController];
+    BOOL isToViewControllerFirstInNavController = [navController.viewControllers firstObject] == fromVC;
+    if (hidesBottomBarWhenPushed && tabBar && (tabBarControllerContainsToViewController || (isToViewControllerFirstInNavController && tabBarControllerContainsNavController))) {
+        [fromVC.view addSubview:tabBar];
+        shouldAddTabBarBackToTabBarController = YES;
+        tabBar.transform = CGAffineTransformIdentity;
+    }
+
+    if (shouldAddTabBarBackToTabBarController) {
+        [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+            CGFloat transform_tabbar = (fromVC.view.frame.size.width);
+            tabBar.transform = CGAffineTransformMakeTranslation(transform_tabbar, 0);
+            
+        }completion:^(BOOL finished) {
+            if (shouldAddTabBarBackToTabBarController) {
+                [tabBarController.view addSubview:tabBar];
+                tabBar.transform = CGAffineTransformIdentity;
+            }
+        }];
+        
+    }
+    
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{

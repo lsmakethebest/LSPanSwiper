@@ -96,6 +96,58 @@
     [maskLayer addAnimation:group forKey:@"path"];
     
     
+    //TabbarController hidesBottomBarWhenPushed
+    UITabBarController *tabBarController = toVC.tabBarController;
+    UINavigationController *navController = toVC.navigationController;
+    UITabBar *tempTabbar = tabBarController.tabBar;
+    BOOL shouldAddTabBarBackToTabBarController = NO;
+    BOOL hidesBottomBarWhenPushed = fromVC.hidesBottomBarWhenPushed;
+    BOOL tabBarControllerContainsToViewController = [tabBarController.viewControllers containsObject:toVC];
+    BOOL tabBarControllerContainsNavController = [tabBarController.viewControllers containsObject:navController];
+    BOOL isToViewControllerFirstInNavController = [navController.viewControllers firstObject] == toVC;
+    
+    if (hidesBottomBarWhenPushed && tempTabbar && (tabBarControllerContainsToViewController || (isToViewControllerFirstInNavController && tabBarControllerContainsNavController))) {
+        [toVC.view addSubview:tempTabbar];
+        shouldAddTabBarBackToTabBarController = YES;
+        CGFloat transform_tabbar = (toVC.view.frame.size.width);
+        tempTabbar.transform = CGAffineTransformMakeTranslation(transform_tabbar, 0);
+        
+        BOOL _navTranslucent = navController.navigationBar.translucent;
+        BOOL _tabbarTranslucent = tempTabbar.translucent;
+        if (!navController.navigationBarHidden) {
+            if (_navTranslucent == YES && _tabbarTranslucent == YES) {
+                
+            }
+            else if (_navTranslucent == NO && _tabbarTranslucent == YES) {
+                CGRect oldFrame = tempTabbar.frame;
+                oldFrame.origin.y = CGRectGetHeight(tabBarController.view.frame) - CGRectGetHeight(oldFrame) - CGRectGetMaxY(navController.navigationBar.frame);
+                tempTabbar.frame = oldFrame;
+            }
+            else if (_navTranslucent == YES && _tabbarTranslucent == NO) {
+                //NEED TO DO
+                
+            }
+            else if (_navTranslucent == NO && _tabbarTranslucent == NO) {
+                //NEED TO DO
+                
+            }
+        }
+    }
+    
+    if (shouldAddTabBarBackToTabBarController) {
+        [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+            tempTabbar.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            
+            CGRect oldFrame = tempTabbar.frame;
+            oldFrame.origin.y = CGRectGetHeight(tabBarController.view.frame) - CGRectGetHeight(oldFrame);
+            tempTabbar.frame = oldFrame;
+            [tabBarController.view addSubview:tempTabbar];
+            tempTabbar.transform = CGAffineTransformIdentity;
+        }];
+    }
+
+    
     
 }
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{

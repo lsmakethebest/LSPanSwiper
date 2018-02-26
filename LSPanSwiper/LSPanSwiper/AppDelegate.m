@@ -21,7 +21,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-#if 1
+#if 0
     FirstViewController *rootNavController = [[FirstViewController alloc] initWithNibName:NSStringFromClass([FirstViewController class]) bundle:nil];
     LSNavigationController *nav = [[LSNavigationController alloc] initWithRootViewController:rootNavController];
     self.window.rootViewController = nav;

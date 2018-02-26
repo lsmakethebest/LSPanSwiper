@@ -22,7 +22,7 @@
     
     UIView *containerView = [transitionContext containerView];
     fromVC.view.frame=containerView.bounds;
-    toVC.view.frame=containerView.bounds;
+    toVC.view.frame= [transitionContext finalFrameForViewController:toVC];
     [containerView addSubview:fromVC.view];
     [containerView addSubview:toVC.view];
     toVC.view.transform=CGAffineTransformMakeScale(0.1, 0.1);
